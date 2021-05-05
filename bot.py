@@ -2,7 +2,7 @@ import random
 import discord
 from discord.ext import commands
 
-TOKEN = 'ODAxNDk4NzA0MzgwMjk3MjI3.YAhj1g.nHVNCgql1remOKmwuaY_sSD-R8g'
+TOKEN = 'token goes here'
 
 description = '''Bonzi Buddy Stealer of Memes'''
 bot = commands.Bot(command_prefix='?', description=description)
