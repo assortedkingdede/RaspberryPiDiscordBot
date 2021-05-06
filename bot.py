@@ -86,6 +86,6 @@ gifs = ["https://media.discordapp.net/attachments/817586768827121666/83601133643
 bot.run(TOKEN)
 
 if __name__ == "__main__":
-    run()
+    mainProgram()
 
 
