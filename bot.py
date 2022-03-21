@@ -69,6 +69,7 @@ async def divide(ctx, left : int, right : int):
     await ctx.send(left / right)
     print(ctx.message.author)
     
+"""Add a for loop to call more than one joke"""                           
 @bot.command()
 async def joke(ctx):
     """Unfunny Joke"""
