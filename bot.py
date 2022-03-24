@@ -3,6 +3,8 @@ import discord
 from discord.ext import commands
 import DiscordUtils
 
+#Shoutouts to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
+
 
 TOKEN = 'INSERT TOKEN HERE'
 
@@ -71,11 +73,16 @@ async def divide(ctx, left : int, right : int):
     
 """Add a for loop to call more than one joke"""                           
 @bot.command()
-async def joke(ctx):
+async def joke(ctx, arg):
     """Unfunny Joke"""
     user = ctx.message.author
-    await ctx.send(random.choice(jokes)) 
     print(ctx.message.author)
+    if arg = 1
+        await ctx.send(random.choice(jokes))
+    elif arg = 2
+        await ctx.send(random.choice(jokes))
+        await ctx.send(random.choice(jokes))
+    
     
 @bot.command()
 async def sayuser(ctx):
@@ -98,16 +105,14 @@ async def betaGif(ctx):
     await ctx.send(random.choice(gifs))
     print(ctx.message.author)
     
-#@bot.command()
-#async def gif(ctx):
-    #ctx.send(file=discord.File('squidward.gif'))
-    
 jokes = ["What do you call a Cow that can\'t give milk? An utter faliure!",
          "What do Donkeys send out near Christmas? Mule tide greetings!",
          "Who earns a living by driving his customers away? A Taxi Driver!",
          "What question can never be answered by yes? Are you asleep?",
          "Why do they call HTML hyper text? Too much Java!",
-         "When is the best time to got to bed? When the bed won\'t come to you!"]
+         "When is the best time to got to bed? When the bed won\'t come to you!",
+         "Why did the scientist install a knocker on his door? To win the No-bel prize!",
+         "Who earns a living by driving their customers away? A taxi driver!"]
 
 gifs =["https://media.discordapp.net/attachments/817586768827121666/836011336437727262/image0.gif",
         "https://tenor.com/view/jontron-just-let-me-die-flex-tape-im-too-perfect-let-me-die-gif-13374794",
