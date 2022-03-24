@@ -32,10 +32,10 @@ async def on_command_error(ctx, error):
     await ctx.send(f"An error occured: {str(error)}")
     print(ctx.message.author)
 
-@bot.event
-async def on_member_join(member):
-    channel = discord.utils.get(member.guild.channels, name="general")
-     embed = discord.Embed(title = "
+#@bot.event
+#async def on_member_join(member):
+    #channel = discord.utils.get(member.guild.channels, name="general")
+    #embed = discord.Embed(title = "
 
 @bot.command()
 async def hello(ctx):
@@ -105,6 +105,18 @@ async def betaGif(ctx):
     user = ctx.message.author
     await ctx.send(random.choice(gifs))
     print(ctx.message.author)
+                          
+@bot.command
+async def help(ctx):
+    await ctx.send("""Commands:
+    !help: Shows this command
+    !hello: Says World
+    !add: Adds two numbers.
+    !subtract: Subtracts on number from another
+    !multiply:
+    !divide:
+    
+    
     
 jokes = ["What do you call a Cow that can\'t give milk? An utter faliure!",
          "What do Donkeys send out near Christmas? Mule tide greetings!",
