@@ -3,8 +3,9 @@ import discord
 from discord.ext import commands
 import DiscordUtils
 
-#Shoutouts to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
+#Shoutout to the dumbass who made this program who has uploaded the bot token multiple times
 
+#Shoutouts to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
 
 TOKEN = 'INSERT TOKEN HERE'
 
@@ -23,7 +24,7 @@ async def on_ready():
         print(guild.name)
         print(guild.id)
     print('------')
-    await bot.change_presence(activity=discord.Game(name="Waluigi for Atari 2600"))
+    await bot.change_presence(activity=discord.Game(name="Bonzification"))
     
 @bot.event
 async def on_command_error(ctx, error):
