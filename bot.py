@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 import DiscordUtils
 
-#Shoutout to the dumbass who made this program who has uploaded the bot token multiple times
+#Shoutout to the idiot who made this program who has uploaded the bot token multiple times
 
 #Shoutouts to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
 
@@ -112,11 +112,9 @@ async def help(ctx):
     !help: Shows this command
     !hello: Says World
     !add: Adds two numbers.
-    !subtract: Subtracts on number from another
-    !multiply:
-    !divide:
-    
-    
+    !subtract: Subtracts one number from another.
+    !multiply: Multiplys two numbers.
+    !divide: Divides two numbers. """)
     
 jokes = ["What do you call a Cow that can\'t give milk? An utter faliure!",
          "What do Donkeys send out near Christmas? Mule tide greetings!",
