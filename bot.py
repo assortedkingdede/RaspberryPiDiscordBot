@@ -5,7 +5,7 @@ import DiscordUtils
 
 #Shoutout to the idiot who made this program who has uploaded the bot token multiple times
 
-#Shoutouts to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
+#Shoutout to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
 
 TOKEN = 'INSERT TOKEN HERE'
 
