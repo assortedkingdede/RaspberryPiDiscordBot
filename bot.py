@@ -126,7 +126,6 @@ jokes = ["What do you call a Cow that can\'t give milk? An utter faliure!",
          "Who earns a living by driving their customers away? A taxi driver!"]
 
 gifs =["https://media.discordapp.net/attachments/817586768827121666/836011336437727262/image0.gif",
-        "https://tenor.com/view/jontron-just-let-me-die-flex-tape-im-too-perfect-let-me-die-gif-13374794",
         "https://tenor.com/view/tf2-spy-spy-tf2-gentlemen-gif-18144778"]
 
 bot.run(TOKEN)
