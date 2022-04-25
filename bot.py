@@ -1,3 +1,4 @@
+#Thanks to REDACTED for helping out on the joke command loop
 import random
 import discord
 from discord.ext import commands
@@ -7,15 +8,15 @@ import DiscordUtils
 
 #Shoutout to the people who made Bonzi Buddy for causing over twenty years of terror on the internet. 
 
-TOKEN = 'INSERT TOKEN HERE'
+TOKEN = 'TOKEN'
 
 description = '''Bonzi Buddy Stealer of Memes'''
 bot = commands.Bot(command_prefix='?', description=description)
 
 defaultRole = 'level 1'
 
-@bot.event
-async def on_ready():
+def debugFunction():
+    print("debug function active")
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
@@ -23,8 +24,14 @@ async def on_ready():
     for guild in bot.guilds:
         print(guild.name)
         print(guild.id)
+        print(guild.owner)
+        print(guild.member_count)
     print('------')
+
+@bot.event
+async def on_ready():
     await bot.change_presence(activity=discord.Game(name="Bonzification"))
+    debugFunction()
     
 @bot.event
 async def on_command_error(ctx, error):
@@ -74,16 +81,12 @@ async def divide(ctx, left : int, right : int):
     
 """Add a for loop to call more than one joke"""                           
 @bot.command()
-async def joke(ctx, arg):
+async def joke(ctx, count : int):
     """Unfunny Joke"""
     user = ctx.message.author
     print(ctx.message.author)
-    if arg = 1
+    for x in range(count):
         await ctx.send(random.choice(jokes))
-    elif arg = 2
-        await ctx.send(random.choice(jokes))
-        await ctx.send(random.choice(jokes))
-    
     
 @bot.command()
 async def sayuser(ctx):
@@ -125,8 +128,8 @@ jokes = ["What do you call a Cow that can\'t give milk? An utter faliure!",
          "Why did the scientist install a knocker on his door? To win the No-bel prize!",
          "Who earns a living by driving their customers away? A taxi driver!"]
 
-gifs =["https://media.discordapp.net/attachments/817586768827121666/836011336437727262/image0.gif",
-        "https://tenor.com/view/tf2-spy-spy-tf2-gentlemen-gif-18144778"]
+gifs =["https://tenor.com/view/dead-chat-dead-chat-xd-gif-24234324",
+        "https://tenor.com/view/spawn-hell-hurl-through-hell-fall-to-hell-fire-gif-17250068"]
 
 bot.run(TOKEN)
 
